@@ -10,7 +10,7 @@ export default function Input(props: inputProps) {
   return (
     <div
       className="flex w-60 m-10 justify-center items-center
-     gap-6 mb-6 "
+     gap-2 mb-2 "
     >
       <input
         type={props.type}

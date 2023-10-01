@@ -31,7 +31,9 @@ export default function Items() {
       <div className="m-2 p-2 flex flex-row border-double border-blackish border-2 rounded-md">
         {cardRender()}
       </div>
-      <Button text="Add Item" onClick={() => navigate("/app/addItem")} />
+      <div className="right-2 bottom-2 absolute">
+        <Button text="Add Item" onClick={() => navigate("/app/addItem")} />
+      </div>
     </div>
   );
 }

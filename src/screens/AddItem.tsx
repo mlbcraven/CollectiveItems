@@ -7,6 +7,7 @@ export interface itemObject {
   itemTitle: string;
   itemDesc: string;
   itemAvailable: number;
+  itemPicture?: unknown;
 }
 
 export default function AddItem() {
@@ -19,7 +20,7 @@ export default function AddItem() {
   });
 
   return (
-    <div>
+    <div className="flex flex-col items-center bg-beige ">
       <Input
         type={"number"}
         placeholder={"ID of product"}
@@ -54,6 +55,11 @@ export default function AddItem() {
         value={newItem.itemAvailable || 0}
         onChange={(e) => setNewItem({ ...newItem, itemAvailable: parseInt(e) })}
       />
+      {/*<input
+        type="file"
+        accept="public/*"
+        onChange={(e) => setNewItem({ ...newItem, itemPicture: e })}
+      /> */}
       <div>
         <Button
           text="Add Item"
