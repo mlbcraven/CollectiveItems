@@ -12,7 +12,7 @@ export default function Card(props: CardProps) {
     <div className="max-w-sm rounded overflow-hidden shadow-lg">
       <img src={props.imgSrc} alt={props.imgAlt} className="w-20 h-20" />
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">
+        <div className="font-bold text-xl m-2">
           {props.title} ProductID : {props.productID}
         </div>
         <p className="text-oil text-base">{props.desc}</p>
