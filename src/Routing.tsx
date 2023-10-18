@@ -5,6 +5,7 @@ import Information from "./screens/Information.tsx";
 import Items from "./screens/Items.tsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AddItem from "./screens/AddItem.tsx";
+import Characters from "./screens/Characters.tsx";
 
 export default function Routing() {
   return (
@@ -16,6 +17,7 @@ export default function Routing() {
           <Route path="/app/contact" element={<ContactUs />} />
           <Route path="/app/information" element={<Information />} />
           <Route path="/app/addItem" element={<AddItem />} />
+          <Route path="/app/characters" element={<Characters />} />
         </Route>
       </Routes>
     </BrowserRouter>

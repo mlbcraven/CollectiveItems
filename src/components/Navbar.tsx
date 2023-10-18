@@ -17,6 +17,11 @@ export default function Navbar() {
           color={AnchorColors.oil}
         />
         <Anchor
+          href="/app/characters"
+          text="Characters"
+          color={AnchorColors.oil}
+        />
+        <Anchor
           href="/app/information"
           text="Information"
           color={AnchorColors.oil}

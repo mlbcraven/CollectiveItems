@@ -8,9 +8,7 @@ export default function Items() {
 
   function getItemInfo(): itemObject[] {
     const getItemFromStorage = localStorage.getItem("item");
-    const itemObject = getItemFromStorage
-      ? JSON.parse(getItemFromStorage)
-      : null;
+    const itemObject = getItemFromStorage ? JSON.parse(getItemFromStorage) : [];
 
     return itemObject;
   }
